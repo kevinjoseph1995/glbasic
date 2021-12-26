@@ -1,6 +1,6 @@
 #include "glbasic/glbasic.h"
 #include "glbasic/objects/cube.h"
-#include "glbasic/utils/file_utils.h"
+#include "glbasic/file_utils.h"
 #include <experimental/filesystem>
 #include <spdlog/spdlog.h>
 

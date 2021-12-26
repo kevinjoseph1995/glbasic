@@ -1,4 +1,4 @@
-#include "window_manager.h"
+#include "glbasic/window_manager.h"
 
 // clang-format off
 //#include <glad/glad.h>
@@ -6,14 +6,14 @@
 // clang-format on
 #include <utility>
 
-#include "events/key_event.h"
-#include "events/mouse_event.h"
-#include "events/window_event.h"
-#include "gl_debug.h"
-#include "renderer/render_command.h"
-#include "renderer/rendering_context.h"
-#include "spdlog/cfg/env.h"
-#include "spdlog/spdlog.h"
+#include "glbasic/events/key_event.h"
+#include "glbasic/events/mouse_event.h"
+#include "glbasic/events/window_event.h"
+#include "glbasic/gl_debug.h"
+#include "glbasic/renderer/render_command.h"
+#include "glbasic/renderer/rendering_context.h"
+#include <spdlog/cfg/env.h>
+#include <spdlog/spdlog.h>
 
 using namespace glbasic;
 

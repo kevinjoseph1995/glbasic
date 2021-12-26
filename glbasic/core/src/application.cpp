@@ -1,8 +1,8 @@
 //
 // Created by kevin on 7/6/21.
 //
-#include "application.h"
-#include "gl_debug.h"
+#include "glbasic/application.h"
+#include "glbasic/gl_debug.h"
 
 #include "glbasic/renderer/renderer.h"
 #include "spdlog/cfg/env.h"

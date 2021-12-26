@@ -1,7 +1,7 @@
 //
 // Created by kevin on 7/15/21.
 //
-#include "vertex_array.h"
+#include "glbasic/renderer/vertex_array.h"
 #include "opengl/opengl_vertex_array.h"
 
 namespace glbasic

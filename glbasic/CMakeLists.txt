@@ -1,23 +1,23 @@
 add_library(glbasic STATIC
-        core/glbasic/application.cpp
-        core/glbasic/imgui_layer.cpp
-        core/glbasic/input.cpp
-        core/glbasic/layer_stack.cpp
-        core/glbasic/window_manager.cpp
+        core/src/application.cpp
+        core/src/imgui_layer.cpp
+        core/src/input.cpp
+        core/src/layer_stack.cpp
+        core/src/window_manager.cpp
 
-        core/glbasic/renderer/buffer.cpp
-        core/glbasic/renderer/renderer.cpp
-        core/glbasic/renderer/shader.cpp
-        core/glbasic/renderer/texture.cpp
-        core/glbasic/renderer/camera.cpp
-        core/glbasic/renderer/vertex_array.cpp
-        core/glbasic/renderer/rendering_context.cpp
-        core/glbasic/renderer/render_command.cpp
-        core/glbasic/renderer/render_api.cpp
-        core/glbasic/renderer/camera_controller.cpp
+        core/src/renderer/buffer.cpp
+        core/src/renderer/renderer.cpp
+        core/src/renderer/shader.cpp
+        core/src/renderer/texture.cpp
+        core/src/renderer/camera.cpp
+        core/src/renderer/vertex_array.cpp
+        core/src/renderer/rendering_context.cpp
+        core/src/renderer/render_command.cpp
+        core/src/renderer/render_api.cpp
+        core/src/renderer/camera_controller.cpp
 
-        # glbasic object sources
-        core/glbasic/objects/cube.cpp
+
+        core/src/objects/cube.cpp
 
         platform/opengl/opengl_buffer.cpp
         platform/opengl/opengl_context.cpp
@@ -28,10 +28,10 @@ add_library(glbasic STATIC
         platform/opengl/opengl_render_api.cpp
 
         # Utils
-        core/glbasic/utils/file_utils.cpp
+        core/src/file_utils.cpp
         )
 
-target_include_directories(glbasic PUBLIC core/)
+target_include_directories(glbasic PUBLIC core/include)
 target_include_directories(glbasic PRIVATE platform/)
 target_link_libraries(glbasic PUBLIC glad spdlog -lstdc++fs stb_image -lglfw -ldl glm::glm imgui)
 target_compile_options(glbasic PRIVATE -Wall -Wextra -Wpedantic -Werror)

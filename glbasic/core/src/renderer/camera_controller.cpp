@@ -2,7 +2,7 @@
 // Created by kevin on 8/15/21.
 //
 
-#include "camera_controller.h"
+#include "glbasic/renderer/camera_controller.h"
 #include "glbasic/input.h"
 #include "spdlog/spdlog.h"
 

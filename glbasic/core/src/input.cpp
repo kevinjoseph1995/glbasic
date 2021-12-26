@@ -2,11 +2,11 @@
 // Created by kevin on 7/7/21.
 //
 
-#include "input.h"
-#include "application.h"
-#include "key_codes.h"
+#include "glbasic/input.h"
+#include "glbasic/application.h"
+#include "glbasic/key_codes.h"
 // clang-format off
-#include "gl_debug.h"
+#include "glbasic/gl_debug.h"
 #include "GLFW/glfw3.h"
 // clang-format on
 

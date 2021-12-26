@@ -1,7 +1,7 @@
-#include "renderer.h"
-#include "render_command.h"
+#include "glbasic/renderer/renderer.h"
+#include "glbasic/renderer/render_command.h"
 
-#include <glm/gtc/type_ptr.hpp>
+#include "glm/gtc/type_ptr.hpp"
 
 namespace glbasic
 {

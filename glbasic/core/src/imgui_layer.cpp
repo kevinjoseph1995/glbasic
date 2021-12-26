@@ -2,8 +2,8 @@
 // Created by kevin on 7/6/21.
 //
 
-#include "imgui/imgui_layer.h"
-#include "events/event.h"
+#include "glbasic/imgui/imgui_layer.h"
+#include "glbasic/events/event.h"
 #include "spdlog/spdlog.h"
 
 namespace glbasic

@@ -3,7 +3,7 @@
 //
 
 #include "opengl_buffer.h"
-#include "../../core/glbasic/gl_debug.h"
+#include "glbasic/gl_debug.h"
 
 #include <glad/glad.h>
 

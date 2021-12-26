@@ -4,7 +4,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 // clang-format on
-#include "../../core/glbasic/gl_debug.h"
+#include "glbasic/gl_debug.h"
 #include "spdlog/spdlog.h"
 
 namespace glbasic

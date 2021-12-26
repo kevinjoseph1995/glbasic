@@ -1,7 +1,7 @@
 //
 // Created by kevin on 7/22/21.
 //
-#include "shader.h"
+#include "glbasic/renderer/shader.h"
 #include "opengl/opengl_shader.h"
 #include "spdlog/spdlog.h"
 namespace glbasic

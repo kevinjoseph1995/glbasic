@@ -2,7 +2,7 @@
 // Created by kevin on 6/30/21.
 //
 
-#include "texture.h"
+#include "glbasic/renderer/texture.h"
 #include "opengl/opengl_texture.h"
 
 namespace glbasic

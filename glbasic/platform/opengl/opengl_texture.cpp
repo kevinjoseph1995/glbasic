@@ -4,7 +4,7 @@
 
 #include "opengl_texture.h"
 
-#include "../../core/glbasic/gl_debug.h"
+#include "glbasic/gl_debug.h"
 #include "spdlog/spdlog.h"
 #include "stb_image.h"
 
