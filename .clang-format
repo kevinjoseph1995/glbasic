@@ -1,0 +1,6 @@
+---
+# for details: http://releases.llvm.org/9.0.0/tools/clang/docs/ClangFormatStyleOptions.html
+Language: Cpp
+Standard: Cpp11
+BasedOnStyle: Microsoft
+...
