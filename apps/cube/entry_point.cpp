@@ -5,8 +5,7 @@
 
 int main()
 {
-
-    std::unique_ptr<CubeDemo> app = std::make_unique<CubeDemo>();
-    app->Initialize("CubeDemo", 1920, 1080);
+    std::unique_ptr<CubeDemo> app = std::make_unique<CubeDemo>("CubeDemo", 1920, 1080);
+    app->Initialize();
     app->Run();
 }

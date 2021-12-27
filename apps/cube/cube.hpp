@@ -1,19 +1,20 @@
+#include "glbasic/file_utils.h"
 #include "glbasic/glbasic.h"
 #include "glbasic/objects/cube.h"
-#include "glbasic/file_utils.h"
 #include <experimental/filesystem>
 #include <spdlog/spdlog.h>
 
 class CubeDemo : public glbasic::Application
 {
   public:
-    bool Initialize(const std::string &application_name, int32_t window_width, int32_t window_height) override
+    CubeDemo(const std::string &application_name, const int window_width, const int window_height)
+        : glbasic::Application(application_name, window_width, window_height)
     {
-        if (!initializeWindow(application_name, window_width, window_height))
-        {
-            return false;
-        }
-
+    }
+    bool Initialize() override
+    {
+        const auto window_width = GetApplicationInstance().GetWindowWidth();
+        const auto window_height = GetApplicationInstance().GetWindowHeight();
         // Setup camera
         camera_controller_.SetCamera(std::make_unique<glbasic::PerspectiveCamera>(
                                          45.0f, float(window_width) / float(window_height), 0.1f, 10.0f),

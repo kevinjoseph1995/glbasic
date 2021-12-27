@@ -11,16 +11,19 @@ namespace glbasic
 class Application
 {
   public:
-    Application();
+    Application(const std::string &application_name, int32_t window_width, int32_t window_height);
+
     virtual ~Application() = default;
 
-    virtual bool Initialize(const std::string &application_name, int32_t window_width, int32_t window_height) = 0;
+    virtual bool Initialize() = 0;
 
     void Run();
+
     virtual void OnEvent(Event &e) = 0;
 
     static inline Application &GetApplicationInstance()
     {
+        GL_ASSERT(application_ptr_, "Has the application singleton been constructed");
         return *Application::application_ptr_;
     }
 
@@ -28,12 +31,13 @@ class Application
     {
         return window_->GetWindowWidth();
     }
+
     [[nodiscard]] inline int32_t GetWindowHeight() const
     {
         return window_->GetWindowHeight();
     }
 
-    WindowManager *GetWindowManager()
+    [[nodiscard]] WindowManager *GetWindowManager()
     {
         GL_ASSERT(window_.get() != nullptr, "[Application::GetWindowManager] Window not initialized");
         return window_.get();
@@ -41,10 +45,6 @@ class Application
 
   protected:
     virtual void update(long delta_time_us) = 0;
-
-    // The window must be initialized first from the inherited Application classes Initialize function using the
-    // following helper function first
-    bool initializeWindow(const std::string &application_name, int32_t window_width, int32_t window_height);
 
   protected:
     std::unique_ptr<WindowManager> window_ = nullptr;
