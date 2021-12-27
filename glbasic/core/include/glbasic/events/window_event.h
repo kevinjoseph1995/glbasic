@@ -3,7 +3,7 @@
 //
 #pragma once
 
-#include "event.h"
+#include "glbasic/events/event.h"
 namespace glbasic
 {
 class WindowResizeEvent : public glbasic::Event

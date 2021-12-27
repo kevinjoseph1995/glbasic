@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../application.h"
-#include "../events/event.h"
-#include "../events/key_event.h"
-#include "../events/mouse_event.h"
-#include "../events/window_event.h"
-#include "../layer.h"
+#include "glbasic/application.h"
+#include "glbasic/events/event.h"
+#include "glbasic/events/key_event.h"
+#include "glbasic/events/mouse_event.h"
+#include "glbasic/events/window_event.h"
+#include "glbasic/layer.h"
 
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
